@@ -2,6 +2,7 @@
 #define CREATURE_H
 
 #include "../IDA/types.h"
+#include "../common/IntVector2.h"
 #include "../common/LongVector3.h"
 #include "../common/FloatVector3.h"
 #include "../common/ByteRGBA.h"
@@ -28,6 +29,9 @@ namespace cube {
             char field_63;
             int race;
             BYTE current_ability;
+            char field_69;
+            char field_6A;
+            char field_6B;
             float time_since_ability;
             int hit_combo;
             float time_since_hit;
@@ -78,15 +82,22 @@ namespace cube {
             int XP;
             unsigned __int8 classType;
             char specialization;
-            _BYTE gap14E[10];
+            char char_14E;
+            char char_14F;
+            IntVector2 current_region;
             char charge;
             _BYTE gap159[27];
             FloatVector3 attack_rotation;
             float HP;
-            float float_184;
+            float block_power;
             float MP;
             float stealth;
-            _BYTE gap190[392];
+            float float_190;
+            float speed;
+            float light_radius;
+            _BYTE gap19C[60];
+            cube::Item last_special_item;
+            cube::Item head;
             cube::Item amulet;
             cube::Item chest_armor;
             cube::Item feet_armor;
@@ -98,7 +109,9 @@ namespace cube {
             cube::Item right_ring;
             cube::Item pet;
             char name[16];
-            _BYTE gap968[136];
+            _BYTE gap968[16];
+            int buff_count;
+            _BYTE gap97C[116];
             msvc::vector<msvc::vector<cube::ItemStack>> inventory_tabs;
             _BYTE gapA08[164];
             int money;
