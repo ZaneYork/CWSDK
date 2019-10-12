@@ -1,5 +1,5 @@
-#ifndef PLASMAHOLDER_H
-#define PLASMAHOLDER_H
+#ifndef CUBE_GUI_H
+#define CUBE_GUI_H
 
 #include "../IDA/types.h"
 #include "../plasma/Node.h"
@@ -7,7 +7,7 @@
 
 namespace cube {
     class Game;
-    class PlasmaHolder {
+    class GUI {
         public:
             plasma::Node *startmenu_node;
             plasma::Node *startmenu_buttons_node;
@@ -175,4 +175,4 @@ namespace cube {
         };
 }
 
-#endif // PLASMAHOLDER_H
+#endif // CUBE_GUI_H
